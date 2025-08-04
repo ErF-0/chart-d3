@@ -9,7 +9,7 @@ import { extent, min, max } from "d3-array";
 //utils
 import { formatTitle } from "../utils/formatter";
 //types
-import type { DataPoint } from "../App"; // Only import what is needed
+import type { DataPoint } from "../App";
 
 interface ChartProps {
   title: string;
@@ -20,7 +20,6 @@ const Chart = ({ title, data }: ChartProps) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
-    // ... rest of the component code remains the same
     if (!data || data.length === 0) return;
 
     // Chart dimensions
@@ -77,7 +76,7 @@ const Chart = ({ title, data }: ChartProps) => {
           .x((d) => x(d[0]))
           .y((d) => {
             const value = (d[1] as number[] | null)?.[i];
-            return value != null ? y(value) : y(0); // Fallback for missing data
+            return value != null ? y(value) : y(0);
           })
           .defined((d) => (d[1] as number[] | null)?.[i] != null);
 

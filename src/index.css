@@ -19,7 +19,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* --- New Background Styles --- */
+  /* ---  Background Styles --- */
   background-image: url("./assets/background_image.png");
   background-size: cover;
   background-position: center;
@@ -33,15 +33,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #2b2b2b; /* Dark grey background for the track */
+  background: #2b2b2b; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1e90ff; /* SteelBlue color for the handle */
+  background-color: #1e90ff; 
   border-radius: 10px;
-  border: 3px solid #2b2b2b; /* Creates a padding effect */
+  border: 3px solid #2b2b2b; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #4682b4; /* A slightly lighter steelblue on hover */
+  background-color: #4682b4; 
 }
