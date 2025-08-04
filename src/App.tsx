@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chart Dashboard</h1>
+      <h1>Dynamic Data Visualizer</h1>
       {chartData.map((chart, index) => (
         <Chart key={index} title={chart.title} data={chart.data} />
       ))}
