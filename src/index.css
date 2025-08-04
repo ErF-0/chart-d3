@@ -20,7 +20,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   /* ---  Background Styles --- */
-  background-image: url("./assets/background_image.png");
+  background-image: url("./assets/background_image.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -33,15 +33,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #2b2b2b; 
+  background: #2b2b2b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1e90ff; 
+  background-color: #1e90ff;
   border-radius: 10px;
-  border: 3px solid #2b2b2b; 
+  border: 3px solid #2b2b2b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #4682b4; 
+  background-color: #4682b4;
 }

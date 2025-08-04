@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Chart from "./components/Chart";
 import "./App.css";
 
-// Define the structure of a single data point
+
 export type DataPoint = [number, number | number[] | null];
 
-// Define the structure of a chart object
+
 export interface ChartData {
   title: string;
   data: DataPoint[];
