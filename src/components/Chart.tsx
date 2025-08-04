@@ -71,7 +71,7 @@ const Chart = ({ title, data }: ChartProps) => {
 
     if (isMultiSeries) {
       // --- Multi-Series Chart ---
-      const colors = ["blue", "green", "red"];
+      const colors = ["#00BFFF", "#32CD32", "#FF4500"];
       for (let i = 0; i < 3; i++) {
         const line = d3Line<DataPoint>()
           .x((d) => x(d[0]))
@@ -100,7 +100,7 @@ const Chart = ({ title, data }: ChartProps) => {
         .append("path")
         .datum(data)
         .attr("fill", "none")
-        .attr("stroke", "steelblue")
+        .attr("stroke", "#1E90FF")
         .attr("stroke-width", 1.5)
         .attr("d", line);
     }

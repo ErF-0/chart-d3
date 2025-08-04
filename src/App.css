@@ -13,7 +13,13 @@
 
 .chart-container {
   margin-bottom: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
+  border-radius: 16px;
+  padding: 1.5rem;
+
+  /* --- Glassmorphism Effect --- */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
